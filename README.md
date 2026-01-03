@@ -1,76 +1,76 @@
-# Laravel Survey Application
+<p align="center">
+  <a href="#" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300">
+  </a>
+</p>
 
-Aplikasi ini dibangun menggunakan **Laravel**, **Livewire**, dan **Bootstrap**.  
+<h2 align="center">Laravel Survey Application</h2>
+
+<p align="center">
+Aplikasi ini dibangun menggunakan Laravel, Livewire, dan Bootstrap.  
 Panduan berikut menjelaskan langkah-langkah lengkap untuk menginstall dan menjalankan aplikasi di lokal.
+</p>
 
 ---
 
-## 📌 Persyaratan Sistem
 
-Pastikan software berikut sudah terinstall:
 
-- PHP ≥ 8.2
-- Composer
-- MySQL / MariaDB
-- Node.js & NPM (opsional, jika pakai asset build)
-- Web Server (Laragon / XAMPP / Laravel built-in server)
+## 🛠 Teknologi yang Digunakan
+
+- **Laravel 12**
+- **Livewire v3**
+- **MySQL / MariaDB**
+- **Blade Template**
+- **SweetAlert2**
+- **Bootstrap**
 
 ---
 
-## 1️⃣ Clone / Download Project
 
-Jika dari GitHub:
+---
 
-git clone https://github.com/username/nama-project.git
-cd nama-project
-Atau jika sudah punya folder project, langsung masuk ke direktori tersebut.
-
-2️⃣ Install Dependency Laravel
-Jalankan perintah berikut:
-
-
-composer install
-
+## ⚙️ Cara Instalasi Project
+1. **Install composer**
+   ```bash
+    composer install
 Tunggu hingga proses selesai.
 
-3️⃣ Copy & Konfigurasi File .env
-Salin file .env.example menjadi .env:
-
-cp .env.example .env
-
-Lalu buka file .env dan sesuaikan database:
-
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=survey
-DB_USERNAME=root
-DB_PASSWORD=
-
-Pastikan database sudah dibuat di MySQL.
-
-4️⃣ Generate Application Key
-
-php artisan key:generate
-5️⃣ Buat Storage Link (Wajib untuk Upload Gambar)
-
-php artisan storage:link
-Ini diperlukan agar foto villa bisa ditampilkan.
-
-6️⃣ Jalankan Migration Database
-
-php artisan migrate
-Jika ingin reset database:
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/username/nama-project.git
+   cd nama-project
+2. **Install dependencies**
+   ```bash
+   composer install
+3. **Copy file environment**
+   ```bash
+   cp .env.example .env
+4. **Generate key**
+   ```bash
+   php artisan key:generate
+5. **Atur konfigurasi database di file .env**
+   ```bash
+   DB_DATABASE=e-commerce
+   DB_USERNAME=root
+   DB_PASSWORD=
+6. **Jalankan migrasi**
+   ```bash
+   php artisan migrate
+6. **Link storage**
+   ```bash
+   php artisan storage:link
 
 
-7️⃣Jalankan Aplikasi
-Gunakan Laravel built-in server:
+---
 
-php artisan serve
-Akses di browser:
+## Cara Menjalankan Project
 
+1. **Jalankan server Laravel**
+   ```bash
+   php artisan serve
 
-http://127.0.0.1:8000
-Atau jika menggunakan Laragon:
+1. **Akses di browser**
+   ```bash
+   http://127.0.0.1:8000
+   
 
-http://nama-project.test
